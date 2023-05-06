@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="/Js/jquery.js"></script>
+    <script type="text/javascript" src="/Js/Upload.js"></script>
+    <script type="text/javascript" src="/Js/Function.js"></script>
+    <link type="text/css" rel="stylesheet" href="/Css/Upload.css">
+</head>
+<body>
+<div class="top_bar">
+    <div class="bar_box" id="collection_box">
+        <div class="bar_word">my collection</div>
+    </div>
+    <div class="bar_box" id="personal_box">
+        <div class="bar_word">personal</div>
+    </div>
+    <div class="bar_box" id="message_box">
+        <div class="bar_word">message</div>
+    </div>
+</div>
+<div class="large_box">
+    <div class="big_box">
+        <label for="image_upload"><img id="user_head" src=""></label>
+        <input type="file" accept="image/*" id="image_upload">
+        <div class="block"id="upload_first_block">
+            <input type="text" placeholder="name" class="input_text" id="upload_name">
+        </div>
+        <div class="block">
+            <input type="text" placeholder="phone number" class="input_text" id="upload_phone">
+        </div>
+        <div class="block">
+            <input type="text" placeholder="address-line1" class="input_text"id="upload_address1">
+        </div>
+        <div class="block">
+            <input type="text" placeholder="address-line2" class="input_text" id="upload_address2">
+        </div>
+        <div class="block">
+            <div class="advice" id="upload_advice"></div>
+        </div>
+        <div class="block">
+            <div class="button" id="upload_button"><div class="word_set"> upload</div></div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

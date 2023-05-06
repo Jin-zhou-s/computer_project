@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    user-select: none;
+    font-family: Verdana;
+}
+
+.background {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.big_box {
+    position: relative;
+    height: 800px;
+    width: 1280px;
+    border: gray solid 1px;
+    top: 10%;
+    padding-left: 20px;
+    margin: 0 auto;
+    background: rgba(217, 217, 217, 0.96);
+    border-radius: 7px;
+    box-shadow: #464343 2px 2px 4px;
+}
+
+.left_box {
+    position: relative;
+    width: 35%;
+    height: 100%;
+    float: left;
+    margin: 0 auto;
+    transition: .5s;
+}
+
+.right_box {
+    position: relative;
+    width: 65%;
+    height: 100%;
+    float: left;
+    margin: 0 auto;
+    background: rgba(157, 154, 154, 0.7);
+    border-radius: 7px;
+    border-bottom-left-radius: unset;
+    border-top-left-radius: unset;
+    text-align: center;
+    color: rgba(217, 217, 217, 0.96);
+}
+
+.line_box {
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.Login_email_input,
+.Login_password_input,
+.Register_name_input,
+.Register_password_input,
+.Register_password_check_input,
+.Register_email_input,
+.Forget_email_input,
+.Forget_code_input {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 45px;
+    top: 10px;
+}
+
+.title {
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    top: 20%;
+}
+
+.img {
+    width: 71px;
+    height: 71px;
+    border-radius: 50%;
+    border: gray solid 2px;
+    margin: 0 auto;
+}
+
+.picture {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.input_block {
+    height: 85%;
+    width: 70%;
+    background: unset;
+    border: 1px none #858484;
+    border-bottom-style: solid;
+    outline: none;
+    font-size: 20px;
+    padding-left: 45px;
+    margin-left: 10%;
+    transition: .5s;
+}
+
+.input_block:focus {
+    border: 2px none rgba(0, 0, 0, 0.96);
+    border-bottom-style: solid;
+    width: 65%;
+}
+
+.advice {
+    position: relative;
+    text-align: center;
+    margin-top: 10%;
+    color: red;
+    font-size: 20px;
+}
+
+.button {
+    position: relative;
+    height: 100%;
+    width: 30%;
+    border-radius: 7px;
+    background: #99999d;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    transition: .5s;
+}
+
+.button:hover {
+    background: #c0c0c4;
+    color: green;
+}
+
+.button:active {
+    background: #6f6f72;
+    color: white;
+}
+
+.word_set {
+    font-size: 25px;
+    position: relative;
+    top: 20%;
+    margin: auto;
+}
+
+#Login_a {
+    position: relative;
+    margin-top: 15%;
+}
+
+#Login_f {
+    position: relative;
+    margin-top: 15%;
+}
+
+#Register_d {
+    position: relative;
+    margin-top: 35%;
+}
+
+#Forget_a {
+    position: relative;
+    margin-top: 15%;
+}
+
+#Forget_L {
+    position: relative;
+    margin-top: 15%;
+}
+
+#Register_jump {
+    background-color: unset;
+    border: rgba(217, 217, 217, 0.96) 1px solid;
+}
+
+#forget_jump {
+    background-color: unset;
+    border: rgba(217, 217, 217, 0.96) 1px solid;
+}
+
+#Login_jump {
+    background-color: unset;
+    border: rgba(217, 217, 217, 0.96) 1px solid;
+}
+
+#Login_title {
+    margin-top: 30%;
+}
+
+#Register_title {
+    margin-top: 30%;
+}
+
+#Forget_title {
+    margin-top: 20%;
+}
+
+#Forget_line {
+    margin-top: 10%;
+}
+
+#picture_img {
+    height: 80px;
+}
+
+#Login_password_input {
+    background: url("/public/img/password.png") no-repeat 2px;
+    background-position-y: 7px;
+    background-size: 35px;
+}
+
+#Register_name_input {
+    background: url("/public/img/account.png") no-repeat 2px;
+    background-position-y: 7px;
+    background-size: 35px;
+}
+
+#Register_password_input {
+    background: url("/public/img/password.png") no-repeat 2px;
+    background-position-y: 7px;
+    background-size: 35px;
+}
+
+#Register_password_check_input {
+    background: url("/public/img/password_check.png") no-repeat -2px;
+    background-position-y: 0;
+    background-size: 45px;
+}
+
+#Register_email_input {
+    background: url("/public/img/email.png") no-repeat 0px;
+    background-position-y: 5px;
+    background-size: 40px;
+}
+
+#Forget_email_input {
+    background: url("/public/img/email.png") no-repeat 0px;
+    background-position-y: 7px;
+    background-size: 40px;
+}
+
+#Forget_code_input {
+    background: url("/public/img/code_check.png") no-repeat 0px;
+    background-position-y: 7px;
+    background-size: 35px;
+}

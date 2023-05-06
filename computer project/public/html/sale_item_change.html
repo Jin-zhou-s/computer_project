@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>item detail</title>
+    <script type="text/javascript" src="/Js/jquery.js"></script>
+    <script type="text/javascript" src="/Js/sale_item_change.js"></script>
+    <script type="text/javascript" src="/Js/Function.js"></script>
+    <link type="text/css" rel="stylesheet" href="/Css/sale_item_change.css">
+</head>
+<body>
+<div class="top_bar">
+    <div class="bar_box" id="name_box">
+        <div class="bar_word" id="name"></div>
+    </div>
+    <div class="bar_box" id="collection_box">
+        <div class="bar_word">my collection</div>
+    </div>
+    <div class="bar_box" id="personal_box">
+        <div class="bar_word">personal</div>
+    </div>
+    <div class="bar_box" id="message_box">
+        <div class="bar_word">message</div>
+    </div>
+</div>
+<div class="detail_box">
+    <div class="detail_title">
+        <div class="detail_title_word">Items for sale:</div>
+    </div>
+    <div class="detail_box_top">
+        <label for="image_up"><img class="detail_box_top_image" id="item_image"></label>
+        <input type="file" accept="image/*" id="image_up">
+        <div class="detail_box_top_text">
+            <div class="detail_box_top_text_description" id="description">
+                <textarea id="description_input" placeholder="please enter your item description"></textarea>
+            </div>
+            <div class="detail_box_top_text_number"><input type="number" id="price"
+                                                           placeholder="please enter the item price">￡
+            </div>
+            <div id="advice"></div>
+        </div>
+    </div>
+    <div class="detail_box_middle">
+        <div class="detail_box_middle_button" id="detail_box_middle_button_submit">
+            <div class="detail_box_middle_button_collection_image"><img src="/img/submit.png" class="img_setting">
+            </div>
+            Determined to submit
+        </div>
+    </div>
+    <div class="detail_box_bottom">
+        <div class="detail_box_bottom_title">
+            <div class="detail_box_bottom_title_word">Product parameters:</div>
+        </div>
+        <div class="detail_box_bottom_box">
+            <div class="detail_box_bottom_box_block">
+                <div class="detail_box_bottom_box_block_word" id="date">Purchase time:
+                    <input type="date" id="date_input">
+                </div>
+            </div>
+        </div>
+        <div class="detail_box_bottom_box_block">
+            <div class="detail_box_bottom_box_block_word" id="status">Item Status:
+                <input type="text" id="status_input">
+            </div>
+        </div>
+        <div class="detail_box_bottom_box_block">
+            <div class="detail_box_bottom_box_block_word" id="type">Type of item:
+                <input type="text" id="type_input">
+            </div>
+        </div>
+        <div class="detail_box_bottom_box_block">
+            <div class="detail_box_bottom_box_block_word" id="i_name">Name of item:
+                <input type="text" id="name_input">
+            </div>
+        </div>
+        <div class="detail_box_bottom_box_block" id="box1"></div>
+
+    </div>
+</div>
+
+</body>
+</html>

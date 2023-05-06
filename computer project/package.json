@@ -1,0 +1,17 @@
+{
+  "name": "computer project",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-ws": "^5.0.2",
+    "mongodb": "^5.2.0",
+    "mongoose": "^7.0.3",
+    "mysql": "^2.18.1",
+    "nodejs-websocket": "^1.7.2",
+    "nodemailer": "^6.9.1",
+    "websocket": "^1.0.34"
+  },
+  "scripts": {
+    "start": "public/html/Shop.html"
+  }
+}

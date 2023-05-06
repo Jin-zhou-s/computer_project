@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>item detail</title>
+    <script type="text/javascript" src="/Js/jquery.js"></script>
+    <script type="text/javascript" src="/Js/Item_detail.js"></script>
+    <script type="text/javascript" src="/Js/Function.js"></script>
+    <link type="text/css" rel="stylesheet" href="/Css/item_detail.css">
+</head>
+<body>
+<div class="top_bar">
+    <div class="bar_box" id="name_box">
+        <div class="bar_word" id="name"></div>
+    </div>
+    <div class="bar_box" id="collection_box">
+        <div class="bar_word">my collection</div>
+    </div>
+    <div class="bar_box" id="login_box">
+        <div class="bar_word">Login</div>
+    </div>
+    <div class="bar_box" id="personal_box">
+        <div class="bar_word">personal</div>
+    </div>
+    <div class="bar_box" id="shop_box">
+        <div class="bar_word">shop</div>
+    </div>
+    <div class="bar_box" id="message_box">
+        <div class="bar_word">message</div>
+    </div>
+    <div class="bar_box" id="register_box">
+        <div class="bar_word">register</div>
+    </div>
+</div>
+<div class="detail_box">
+    <div class="detail_title">
+        <div class="detail_title_word">Product Details:</div>
+    </div>
+    <div class="detail_box_top">
+        <div class="detail_box_top_image"><img src="" class="img_setting" id="i_image"> </div>
+        <div class="detail_box_top_text">
+            <div class="detail_box_top_text_description" id="description">
+            </div>
+            <div class="detail_box_top_text_price" id="price"></div>
+            <div class="detail_box_top_text_seller">
+                <div class="detail_box_top_text_seller_image"><img src="" class="img_setting"id="s_image"></div>
+                <div class="detail_box_top_text_seller_name"id="s_name"></div>
+                <div class="detail_box_top_Evaluation" id="detail_box_top_evaluation">
+                    <div id="detail_box_top_Evaluation_image"><img src="/img/shop_evaluation.png" class="img_setting"></div>
+                    <div id="score"></div>
+                </div>
+            </div>
+            <div class="detail_box_top_text_number" id="successful_number"></div>
+        </div>
+    </div>
+    <div class="detail_box_middle">
+        <div class="detail_box_middle_button" id="detail_box_middle_button_collection">
+            <div class="detail_box_middle_button_collection_image"><img src="/img/Collection.png" class="img_setting"></div>
+            add collection
+        </div>
+        <div class="detail_box_middle_button" id="detail_box_button_middle_Chat">
+            <div class="detail_box_middle_button_Chat_image"><img src="/img/chat.png" class="img_setting"></div>
+            Chat with seller
+        </div>
+        <div class="detail_box_middle_button" id="detail_box_button_middle_buy">
+            <div class="detail_box_middle_button_buy_image"><img src="/img/buy.png" class="img_setting" id="buy"></div>
+            Buy Now
+        </div>
+        <div class="detail_box_middle_button" id="detail_box_button_middle_change">
+            <div class="detail_box_middle_button_change_image"><img src="/img/change_item.png" class="img_setting"></div>
+            <div class="word">Change of information</div>
+        </div>
+        <div class="detail_box_middle_button" id="detail_box_button_middle_delivery">
+            <div class="detail_box_middle_button_delivery_image"><img src="/img/delivery.png" class="img_setting"></div>
+            <div class="word" id="word">Fill in the delivery note number</div>
+    </div>
+        <div class="detail_box_middle_button" id="detail_box_button_middle_delete">
+            <div class="detail_box_middle_button_delete_image"><img src="/img/rubbish_bin.png" class="img_setting"></div>
+            Delete item
+        </div>
+        <div class="detail_box_middle_button" id="detail_box_button_middle_cancel">
+            <div class="detail_box_middle_button_delete_image"><img src="/img/Cancellation_of_orders.png" class="img_setting"></div>
+            Cancellation of orders
+        </div>
+    </div>
+    <div class="detail_box_bottom">
+        <div class="detail_box_bottom_title">
+            <div class="detail_box_bottom_title_word">Product parameters:</div>
+        </div>
+        <div class="detail_box_bottom_box">
+            <div class="detail_box_bottom_box_block">
+                <div class="detail_box_bottom_box_block_word" id="date"></div>
+            </div>
+            </div>
+            <div class="detail_box_bottom_box_block">
+                <div class="detail_box_bottom_box_block_word" id="status"></div>
+            </div>
+            <div class="detail_box_bottom_box_block">
+                <div class="detail_box_bottom_box_block_word" id="type"></div>
+            </div>
+            <div class="detail_box_bottom_box_block">
+                <div class="detail_box_bottom_box_block_word" id="i_name"></div>
+            </div>
+            <div class="detail_box_bottom_box_block"></div>
+
+        </div>
+</div>
+
+</body>
+</html>

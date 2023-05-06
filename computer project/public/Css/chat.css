@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #e5d1d1;
+    overflow-x: auto;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+.top_bar {
+    float: top;
+    width: 100%;
+    min-height: 50px;
+    min-width: 1600px;
+    height: 40px;
+    max-height: 100px;
+    background: linear-gradient(to right, #b7b1a5 50%, #dcad7f);
+    color: white;
+}
+
+.bar_box {
+    float: left;
+    width: 140px;
+    height: 50px;
+    border-radius: 3px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    transition: .5s;
+    text-align: center;
+}
+
+.bar_box:hover {
+    background-color: gray;
+    box-shadow: black 1px 1px 4px;
+}
+
+.bar_word {
+    margin-top: 8%;
+}
+
+#name_box {
+    float: left;
+    margin-left: 40px;
+}
+
+#name_box:hover {
+    background: unset;
+    box-shadow: unset;
+}
+
+#personal_box {
+    float: right;
+}
+
+#shop_box {
+    float: right;
+}
+
+#collection_box {
+    float: right;
+    margin-right: 40px;
+}
+
+.chat {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1600px;
+    min-width: 1600px;
+    display: flex;
+    justify-content: center;
+}
+
+.chat_list {
+    width: 600px;
+    height: 100%;
+    min-height: 1000px;
+    background: #e8e6e6;
+}
+
+.chat_list_title {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: #99999d 1px solid;
+}
+
+.chat_list_title_word {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.chat_list_box {
+    width: 95%;
+    height: 120px;
+    border-bottom: #99999d 1px solid;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    transition: .2s;
+}
+
+.chat_list_box:hover {
+    background: #c0c0c4;
+}
+
+.chat_list_box_image {
+    width: 85px;
+    height: 80px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border: #6f6f72 2px solid;
+}
+
+.chat_list_box_text {
+    width: calc(100% - 85px);
+    height: 100%;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.chat_list_box_text_name {
+    width: 100%;
+    height: 35px;
+    margin-top: -20px;
+    font-size: 24px;
+}
+
+.chat_list_box_text_message {
+    width: 100%;
+    font-size: 18px;
+    color: #6f6f72;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.img_setting {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

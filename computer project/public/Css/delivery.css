@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+body {
+    background: rgba(204, 200, 200, 0.43);
+    background-size: cover;
+}
+
+.top_bar {
+    float: top;
+    width: 100%;
+    min-height: 50px;
+    min-width: 1400px;
+    height: 40px;
+    max-height: 100px;
+    background: linear-gradient(to right, #b7b1a5 50%, #dcad7f);
+    border: #6f6f72 1px solid;
+    color: white;
+}
+
+.bar_box {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    margin-left: 40px;
+    height: 50px;
+    border-radius: 3px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    transition: .5s;
+    text-align: center;
+}
+
+.bar_box:hover {
+    background-color: gray;
+    box-shadow: black 1px 1px 4px;
+}
+
+.box {
+    min-width: 1400px;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    width: 750px;
+    height: 870px;
+    border: #6f6f72 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-top: 3%;
+    background: #f6eeee;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.i_box {
+    display: flex;
+    width: calc(100% - 40px);
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.line_box {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 40px);
+    height: 70px;
+    font-size: 20px;
+    font-family: Verdana;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#name_box {
+    margin-top: 40px;
+}
+
+#title {
+    font-size: 28px;
+}
+
+#submit_button {
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.button {
+    width: 120px;
+    height: 70%;
+    border: #9f6805 1px solid;
+    border-radius: 7px;
+    background: #99999b;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.button:hover {
+    background: #cecccc;
+}
+
+.input {
+    outline: none;
+    border: none;
+    background: none;
+    margin-left: 5px;
+    width: 70%;
+    margin-top: 4px;
+    height: 70%;
+    font-size: 18px;
+    border-bottom: #6f6f72 1px solid;
+}
+
+#number_input {
+    margin-top: 20px;
+}
