@@ -114,17 +114,11 @@ $(function item() {
         }
     }
 })
-$(function page_jump() {
-    $("#last_page").click(function (){
-        let this_id = $(this).attr("id");
-        console.log(this_id);
-    })
-    $("#next_page").click(function (){
-        let this_id = $(this).attr("id");
-        console.log(this_id);
-    })
-    $("#ellipsis").click(function (){
-        let this_id = $(this).attr("id");
-        console.log(this_id);
+
+$(function enter(){
+    $(document).keyup(function (event) {
+        if (event.keyCode == "13") {
+            $("#search_button").click();
+        }
     })
 })

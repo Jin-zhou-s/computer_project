@@ -440,7 +440,14 @@ app.ws('/', function (ws, req) {
                 }
             })
         } else if (data.type === 'Chat message') {
-            socket_id.push({"id_user": data.chat_message_me, "url_id": ws});
+            if (data.chat_message_me !== undefined) {
+                socket_id.push({"id_user": data.chat_message_me, "url_id": ws});
+                for (let i = 0; i < socket_id.length; i++) {
+                    if (socket_id[i].id_user === data.chat_message_me && socket_id[i].url_id !== ws) {
+                        socket_id.splice(i, 1);
+                    }
+                }
+            }
             socket.push(ws);
             let my = data.chat_message_me;
             let seller = data.chat_message_seller;
@@ -967,7 +974,7 @@ app.ws('/', function (ws, req) {
         }
     })
     ws.on('close', function (e) {
-        console.log("close connect", ws.readyState);
+
     })
 })
 app.listen(port, () => {
