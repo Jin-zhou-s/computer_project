@@ -313,6 +313,7 @@ app.ws('/', function (ws, req) {
                             }
                             let total = sam.reduce((a, b) => a + b);
                             let score = total / results.length;
+                            let score_1 = score.toFixed(1);
                             connection.query(search_x, function (error, results_s) {
                                 if (error) throw error;
                                 fs.readFile("./public/img/" + detail_image_address + ".txt", "utf-8", function (error, data_i) {
@@ -331,7 +332,7 @@ app.ws('/', function (ws, req) {
                                             detail_i_name: detail_name,
                                             detail_i_image: detail_image,
                                             detail_sale_status: detail_sale_status,
-                                            detail_score: score,
+                                            detail_score: score_1,
                                             detail_times: results_s.length,
                                             type: 'item_detail'
                                         }))
